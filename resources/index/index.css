@@ -1,0 +1,13 @@
+.buttonColorScheme{
+  margin-right: 20px;
+  width: fit-content;
+
+  font-weight: bold;
+  font-size: x-large;
+
+  cursor: pointer;
+}
+
+.buttonColorScheme:hover{
+  color: var(--sec-text-col);
+}

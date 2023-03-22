@@ -1,0 +1,57 @@
+.horz{
+  display: flex;
+  flex-direction: row;
+}
+.vert{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+:root{
+  --text-color: #323232;
+  --sec-text-color:white;
+  --color1: #2a2a2a;
+  --color2: #ff00ee; 
+  --color3: #909090;
+}
+
+.light{
+  --text-color: black;
+  --sec-text-color:black;
+  --color3: rgb(195, 198, 175);
+  --color2: rgb(156, 161, 127); 
+  --color1: rgb(111, 116, 88);
+}
+.dark{
+  --text-color: white;
+  --sec-text-color: #f8f8f8;
+  --color1: rgb(0, 63, 88);
+  --color2: rgb(0, 164, 228);
+  --color3: rgb(44, 44, 44);
+}
+body {
+  color: var(--text-col);
+  background-color: var(--back-col);
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
+
+  transition: var(--transition-speed);
+
+  --back-col:var(--color3);
+  --accent-col: var(--color2);
+  --sec-col:var(--color1);
+
+  --text-col: var(--text-color);
+  --sec-text-col:var(--sec-text-color);
+
+  --transition-speed: 600ms;
+}

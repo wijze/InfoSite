@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Startup</title>
+
+    <link rel="stylesheet" href="resources/global.css"/>
+    <link rel="stylesheet" href="resources/modules/navbar.css"/>
+    <link rel="stylesheet" href="resources/index/index.css"/>
+
+    <script src="resources/modules/loadnav.js"></script>
+
+    <script defer src="resources/global.js"></script>
+    <script defer src="resources/index/index.js"></script>
+    <script defer src="resources/modules/colorscheme.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body class="light">
+    <nav id="nav">
+    </nav>
+
+    <main>
+      <div class="wrapper-horz header">
+        <h1>Welcome to Startup</h1>
+        <h2>set your color scheme</h2>
+        <div class="horz">
+          <p class="buttonColorScheme" onclick="setRandomTheme()">Random</p>
+          <p class="buttonColorScheme" onclick="setNormalTheme('dark')">Dark</p>
+          <p class="buttonColorScheme" onclick="setNormalTheme('light')">Light</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
