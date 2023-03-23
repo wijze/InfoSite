@@ -4,8 +4,8 @@ function loadNav(page){
   return`
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="../../v2/menu.html" class="nav-link">
-          <span class="link-text logo-text">Startup</span>
+        <a href="index.html" class="nav-link">
+          <span class="link-text logo-text">Menu</span>
           <i class="logo-image fa fa-solid fa-arrow-circle-right"></i>
         </a>
       </li>

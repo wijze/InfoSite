@@ -15,6 +15,12 @@ if(theme==null){
   localStorage.setItem('theme',JSON.stringify(theme))
 } else{
   theme = JSON.parse(theme)
+  if(theme.type == "random"){
+    console.log("custom")
+    applyCustomColorscheme(theme.custom)
+  } else {
+    setNormalTheme(theme.type)
+  }
 }
 
 
@@ -36,6 +42,12 @@ function applyCustomColorscheme(newColorScheme){
   for (let i = 0; i < newColorScheme.length; i++) {
     root.style.setProperty('--color'+(i+1), newColorScheme[i].value);
   }
+
+  //change real values and save
+  body.classList = "random"
+  theme.type = "random"
+  theme.custom = newColorScheme
+  localStorage.setItem("theme", JSON.stringify(theme))
 }
 
 
@@ -50,12 +62,6 @@ async function setRandomTheme(){
   newColorScheme = await newColorScheme.colors.map(function(element){return element.rgb})
 
   applyCustomColorscheme(newColorScheme)
-
-  //setting for next use
-  body.classList = "random"
-  theme.type = "random"
-  theme.custom = newColorScheme
-  localStorage.setItem("theme", JSON.stringify(theme))
 }
 
 

@@ -16,9 +16,9 @@
 :root{
   --text-color: #323232;
   --sec-text-color:white;
-  --color1: #2a2a2a;
-  --color2: #ff00ee; 
-  --color3: #909090;
+  --color1: red;
+  --color2: red; 
+  --color3: red;
 }
 
 .light{
