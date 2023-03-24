@@ -1,3 +1,8 @@
+p,h2{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
 .horz{
   display: flex;
   flex-direction: row;
@@ -7,7 +12,30 @@
   flex-direction: column;
 }
 
+.roundButtonSec{
+  margin-right: 0.5rem;
+  margin-bottom: 32px;
+  width: fit-content;
 
+  padding: 16px;
+
+  font-size: 22px;
+
+  cursor: pointer;
+  color: var(--sec-text-col);
+
+  background-color: var(--accent-col);
+  border-radius: 10px;
+}
+
+.roundButtonSec:hover{
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.wrappedText{
+  max-width: 800px;
+}
 
 
 
@@ -16,11 +44,17 @@
 :root{
   --text-color: #323232;
   --sec-text-color:white;
-  --color1: red;
-  --color2: red; 
-  --color3: red;
+  --color1: white;
+  --color2: white; 
+  --color3: white;
 }
-
+.hacker{
+  --text-color: lime;
+  --sec-text-color: lime;
+  --color1: rgb(31, 31, 31);
+  --color2: rgb(80, 80, 80); 
+  --color3: black;
+}
 .light{
   --text-color: black;
   --sec-text-color:black;
@@ -31,9 +65,9 @@
 .dark{
   --text-color: white;
   --sec-text-color: #f8f8f8;
-  --color1: rgb(0, 63, 88);
-  --color2: rgb(0, 164, 228);
-  --color3: rgb(44, 44, 44);
+  --color1: rgb(0, 48, 66);
+  --color2: rgb(0, 130, 182);
+  --color3: rgb(32, 32, 32);
 }
 body {
   color: var(--text-col);

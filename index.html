@@ -15,7 +15,6 @@
     <script src="resources/modules/loadnav.js"></script>
 
     <script defer src="resources/global.js"></script>
-    <script defer src="resources/index/index.js"></script>
     <script defer src="resources/modules/colorscheme.js"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,14 +28,16 @@
       <h1>Protocollen en het lagensysteem</h1>
       <h2>Kies jouw kleuren thema:</h2>
       <div class="horz">
-        <p class="buttonColorScheme" onclick="setRandomTheme()">Random</p>
-        <p class="buttonColorScheme" onclick="setNormalTheme('dark')">Donker</p>
-        <p class="buttonColorScheme" onclick="setNormalTheme('light')">Licht</p>
+        <p class="roundButtonSec" onclick="setRandomTheme()">Random</p>
+        <p class="roundButtonSec" onclick="setNormalTheme('dark')">Donker</p>
+        <p class="roundButtonSec" onclick="setNormalTheme('light')">Licht</p>
+        <p class="roundButtonSec" onclick="setNormalTheme('hacker')">Hacker</p>
       </div>
       <h2>Nog meer tekst</h2>
       <p class="wrappedText">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident architecto modi, pariatur quas culpa animi placeat sint. Eaque vero laudantium praesentium necessitatibus deserunt. Nemo ad reprehenderit similique id. Vero, reprehenderit!
       </p>
     </main>
+    <script>document.getElementById('nav').innerHTML = loadNav('index')</script>
   </body>
 </html>

@@ -1,28 +1,3 @@
-.buttonColorScheme{
-  margin-right: 0.5rem;
-  margin-bottom: 32px;
-  width: fit-content;
-
-  padding: 16px;
-
-  font-size: 22px;
-
-  cursor: pointer;
-  color: var(--sec-text-col);
-
-  background-color: var(--accent-col);
-  border-radius: 10px;
-}
-
-.buttonColorScheme:hover{
-  padding: 15px;
-  border: 1px solid black;
-}
-
-.wrappedText{
-  max-width: 800px;
-}
-
 h1{
   margin-bottom: 2rem;
 }

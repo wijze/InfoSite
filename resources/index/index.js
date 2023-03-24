@@ -1,1 +1,0 @@
-document.getElementById('nav').innerHTML = loadNav('index')

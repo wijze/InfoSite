@@ -12,11 +12,13 @@ main {
 
 
 nav {
+  font-size: larger;
+
   z-index: 21;
 
   position: fixed;
   top: 0;
-  width: calc(3rem + 2%);
+  width: calc(3.7rem + 2%);
   height: 100vh;
 
   background-color: var(--sec-col);
@@ -44,8 +46,9 @@ nav {
 
 .nav-link svg, .nav-link i {
   width: 2rem;
-  font-size: 24px;
+  font-size: 28px;
   transition: var(--transition-speed);
+  text-align: center;
 }
 
 .link-text {
@@ -60,7 +63,7 @@ nav {
   left: -999px;
   transition: var(--transition-speed);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .nav-item:last-child {
@@ -113,7 +116,7 @@ nav:is(:hover, :focus-within) .logo-text{
   padding: 0;
 }
 .has-dropdown > div:first-child{
-  padding: 16px;
+  padding: 20px;
 }
 
 .dropdown{

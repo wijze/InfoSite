@@ -13,6 +13,7 @@ if(theme==null){
     custom:{}
   }
   localStorage.setItem('theme',JSON.stringify(theme))
+  setNormalTheme(theme.type)
 } else{
   theme = JSON.parse(theme)
   if(theme.type == "random"){

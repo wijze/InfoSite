@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocollen en het lagensysteem</title>
+
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../modules/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../modules/loadnav.js"></script>
+
+    <script defer src="../global.js"></script>
+    <script defer src="../modules/colorscheme.js"></script>    
+    <script defer src="settings.js"></script>
+</head>
+<body>
+    <nav id="nav">
+    </nav>
+
+    <main>
+        <h1>Settings</h1>
+        <h2>Kies jouw kleuren thema:</h2>
+        <div class="horz">
+            <p class="roundButtonSec" onclick="setRandomTheme()">Random</p>
+            <p class="roundButtonSec" onclick="setNormalTheme('dark')">Donker</p>
+            <p class="roundButtonSec" onclick="setNormalTheme('light')">Licht</p>
+            <p class="roundButtonSec" onclick="setNormalTheme('hacker')">Hacker</p>
+        </div>
+        <h2>Resets</h2>
+        <div class="horz">
+            <p class="roundButtonSec" onclick="ResetAll()">Alles</p>
+        </div>
+    </main>
+
+    <script>document.getElementById('nav').innerHTML = loadNav('settings')</script>
+</body>
+</html>
