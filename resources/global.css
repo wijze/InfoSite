@@ -2,6 +2,9 @@ p,h2{
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+a{
+  text-decoration: none;
+}
 
 .horz{
   display: flex;

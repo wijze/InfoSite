@@ -1,0 +1,41 @@
+.progressLink{
+  position: relative;
+
+  width: fit-content;
+  padding: 8px 24px 8px 24px;
+  margin-bottom: 10px;
+  margin-top: 0;
+
+  color: var(--sec-text-col);
+  font-size: x-large;
+
+  background-color: var(--accent-col);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  border: 1px solid transparent;
+  border-left: 0;
+
+  cursor: pointer;
+}
+.progressLink:hover{
+  border: 1px solid black;
+  border-left: 0;
+}
+
+.progressLink::before{
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 100%;
+  width: 3px;
+
+  content: "";
+}
+
+.progressLink.done::before{
+  background-color: lime;
+}
+.progressLink.not_done::before{
+  background-color: red;
+}

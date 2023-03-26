@@ -1,14 +1,3 @@
-function getPath(indexPath, page){
-  if(indexPath){
-    return `resources/${page}/${page}.html`
-  } else{
-    if(page == "index"){
-      return "../../index.html"
-    }
-    return `../${page}/${page}.html`
-  }
-}
-
 function loadNav(page){
   let more = false
   const otherpages = []
@@ -33,10 +22,10 @@ function loadNav(page){
 
       <li class="nav-item">
         <a href="${
-          page=='settings' ? 'javascript:void(0)' : getPath(indexroute, "settings")
-        }" class="nav-link" ${page=='settings' ? 'id="active"':''}>
-          <i class="fa fa-solid fa-gear"></i>
-          <span class="link-text">Settings</span>
+          page=='progress' ? 'javascript:void(0)' : getPath(indexroute, "progress")
+        }" class="nav-link" ${page=='progress' ? 'id="active"':''}>
+          <i class="fa fa-solid fa-list-check"></i>
+          <span class="link-text">Progress</span>
         </a>
       </li>
 

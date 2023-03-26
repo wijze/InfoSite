@@ -17,7 +17,6 @@ if(theme==null){
 } else{
   theme = JSON.parse(theme)
   if(theme.type == "random"){
-    console.log("custom")
     applyCustomColorscheme(theme.custom)
   } else {
     setNormalTheme(theme.type)

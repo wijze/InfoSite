@@ -9,4 +9,8 @@ h2{
 p{
   margin: 0;
   font-size: large;
+  margin-bottom: 20px;
+}
+b{
+  margin-top: 50px;
 }
