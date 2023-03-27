@@ -26,20 +26,23 @@
     </nav>
 
     <main>
-      <h1>Protocollen en het lagensysteem</h1>
-      <h2>Kies jouw kleuren thema:</h2>
-      <div class="horz">
-        <p class="roundButtonSec" onclick="setRandomTheme()">Random</p>
-        <p class="roundButtonSec" onclick="setNormalTheme('dark')">Donker</p>
-        <p class="roundButtonSec" onclick="setNormalTheme('light')">Licht</p>
-        <p class="roundButtonSec" onclick="setNormalTheme('hacker')">Hacker</p>
+      <div id="part1">
+        <h1>Protocollen en het lagensysteem</h1>
+        <h2>Kies jouw kleuren thema:</h2>
+        <div class="horz">
+          <p class="roundButtonSec" onclick="setRandomTheme()">Random</p>
+          <p class="roundButtonSec" onclick="setNormalTheme('dark')">Donker</p>
+          <p class="roundButtonSec" onclick="setNormalTheme('light')">Licht</p>
+          <p class="roundButtonSec" onclick="setNormalTheme('hacker')">Hacker</p>
+        </div>
+        <h2>Nog meer tekst</h2>
+        <p class="wrappedText">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident architecto modi, pariatur quas culpa animi placeat sint. Eaque vero laudantium praesentium necessitatibus deserunt. Nemo ad reprehenderit similique id. Vero, reprehenderit!
+        </p>
+        <a onclick="setProgress('Start',100)" href="resources/IP/IP.html" class="roundButtonSec">Begin →</a>
       </div>
-      <h2>Nog meer tekst</h2>
-      <p class="wrappedText">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident architecto modi, pariatur quas culpa animi placeat sint. Eaque vero laudantium praesentium necessitatibus deserunt. Nemo ad reprehenderit similique id. Vero, reprehenderit!
-      </p>
-      <a onclick="setProgress('Start',100)" href="resources/IP/IP.html" class="roundButtonSec">Begin →</a>
     </main>
+    
     <script>document.getElementById('nav').innerHTML = loadNav('index')</script>
   </body>
 </html>

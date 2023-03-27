@@ -1,3 +1,11 @@
+body,html{
+  height: 100vh;
+  width: 100vw;
+
+  padding: 0;
+  margin: 0;
+}
+
 p,h2{
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -45,36 +53,37 @@ a{
 
 
 :root{
-  --text-color: #323232;
-  --sec-text-color:white;
-  --color1: white;
-  --color2: white; 
-  --color3: white;
+  --text-color: 0,0,0;
+  --sec-text-color:0,0,0;
+  --color1: 0,0,0;
+  --color2: 0,0,0; 
+  --color3: 0,0,0;
 }
 .hacker{
-  --text-color: lime;
-  --sec-text-color: lime;
-  --color1: rgb(31, 31, 31);
-  --color2: rgb(80, 80, 80); 
-  --color3: black;
+  --text-color: 0,255,0;
+  --sec-text-color: 0,255,0;
+  --color1: 31, 31, 31;
+  --color2: 80, 80, 80; 
+  --color3: 0,0,0;
 }
 .light{
-  --text-color: black;
-  --sec-text-color:black;
-  --color3: rgb(195, 198, 175);
-  --color2: rgb(156, 161, 127); 
-  --color1: rgb(111, 116, 88);
+  --text-color: 0,0,0;
+  --sec-text-color:0,0,0;
+  --color3: 195, 198, 175;
+  --color2: 156, 161, 127; 
+  --color1: 111, 116, 88;
 }
 .dark{
-  --text-color: white;
-  --sec-text-color: #f8f8f8;
-  --color1: rgb(0, 48, 66);
-  --color2: rgb(0, 113, 158);
-  --color3: rgb(32, 32, 32);
+  --text-color: 255,255,255;
+  --sec-text-color: 220,220,220;
+  --color1: 0, 48, 66;
+  --color2: 0, 113, 158;
+  --color3: 32, 32, 32;
 }
 body {
-  color: var(--text-col);
-  background-color: var(--back-col);
+  --test:255,255,255;
+  color: rgb(var(--text-color));
+  background-color: rgb(var(--color3));
   margin: 0;
   padding: 0;
 
@@ -83,12 +92,12 @@ body {
 
   transition: var(--transition-speed);
 
-  --back-col:var(--color3);
-  --accent-col: var(--color2);
-  --sec-col:var(--color1);
+  --back-col:rgb(var(--color3));
+  --accent-col: rgb(var(--color2));
+  --sec-col:rgb(var(--color1));
 
-  --text-col: var(--text-color);
-  --sec-text-col:var(--sec-text-color);
+  --text-col: rgb(var(--text-color));
+  --sec-text-col:rgb(var(--sec-text-color));
 
   --transition-speed: 600ms;
 }
