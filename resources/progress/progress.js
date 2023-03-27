@@ -30,7 +30,7 @@ for (let key of Object.keys(progress)){
 
 function ResetProgress(){
   if (confirm("Weet je zeker dat je alle progress wil resetten?")){
-      localStorage.setItem("progress", false)
-      location.reload()
+    localStorage.setItem("progress", false)
+    location.reload()
   }
 }

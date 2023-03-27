@@ -1,5 +1,5 @@
 function loadNav(page){
-  let more = false
+  let more = page=="content"
   const otherpages = []
   more = page in otherpages
   const indexroute = page=="index"
@@ -36,10 +36,7 @@ function loadNav(page){
         </div>
         <ul class="dropdown">
           <li class='nav-item'>
-            <a ${page=='html-editor' ? 'id="active"':''} href="${page=='html-editor' ? 'javascript:void(0)' : getPath(indexroute, "html-editor")} "   class="nav-link">Html-editor  </a>
-          </li>
-          <li class='nav-item'>
-            <a ${page=='to-do' ? 'id="active"':''} href="${page=='to-do' ? 'javascript:void(0)' : getPath(indexroute, "to-do")} "   class="nav-link">To-do  </a>
+            <a ${page=='IP' ? 'id="active"':''} href="${page=='IP' ? 'javascript:void(0)' : getPath(indexroute, "IP")} "   class="nav-link">IP-Protocol  </a>
           </li>
         </ul>
       </li>
