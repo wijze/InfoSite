@@ -17,25 +17,29 @@ b{
 
 body{
   background-image: url(../assets/back1.png);
+  background-attachment: fixed;
+
   position: relative;
   overflow: hidden scroll;
   width: 100%;
   height: 200vh;
 
-  box-shadow: inset 0 0 100vw 100vh rgba(var(--color2), 0.6);
+  box-shadow: inset 0 0 100vw 100vh rgba(var(--color2), 0.5);
 }
 
 main{
-  padding: 5% 5% 0 0;
-
+  margin-left: calc(3.7rem + 2%);
   height: fit-content;
+  box-shadow: inset 0 0 20vw rgba(0, 0, 0, 0.5);
 }
 
 #part1{
   position: fixed;
   top: 5vh;
 
-  width: 85%;
+  padding: 0 5% 0 5%;
+
+  width: 80%;
   height: 95vh;
 }
 
@@ -45,7 +49,37 @@ main{
   top: 100vh;
 
   height: 100vh;
-  background-color: rgb(var(--color1));
+  background-color: rgb(var(--color2));
+
+  box-shadow: 0 -20px 20px rgba(var(--color1), 0.6), inset 0 0 20vw black;
+}
+#part2>img{
+  position: absolute;
+  object-fit: cover;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.4;
+}
+#part2>.bubbleWrapper{
+  position: relative;
+  margin: 10vh 10vw 10vh 10vw;
+  z-index: 1;
+}
+
+.headerWrapper{
+  padding: 5%;
+
+  z-index: 1;
+  position: relative;
+
+  background-color: rgba(var(--color3), 0.9);
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(var(--color1), 0.8);
+
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .bubbleWrapper{
@@ -53,4 +87,6 @@ main{
 
   background-color: rgba(var(--color3), 0.8);
   border-radius: 20px;
+
+  box-shadow: 0 0 20px black;
 }

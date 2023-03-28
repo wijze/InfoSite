@@ -17,6 +17,8 @@ a{
 .horz{
   display: flex;
   flex-direction: row;
+
+  flex-wrap: wrap;
 }
 .vert{
   display: flex;
