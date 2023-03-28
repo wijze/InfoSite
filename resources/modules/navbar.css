@@ -43,6 +43,9 @@ nav {
   padding-left: 1rem;
   color: var(--sec-text-col);
 }
+.nav-link:has(.logo-text){
+  height: 5rem;
+}
 
 .nav-link svg, .nav-link i {
   width: 2rem;
