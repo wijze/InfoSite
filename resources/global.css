@@ -8,9 +8,12 @@ body,html{
   overflow: hidden scroll;
 }
 
-p,h2{
+p,h2.li{
   margin-top: 0;
   margin-bottom: 0.5rem;
+}
+p,li{
+  font-size: large;
 }
 a{
   text-decoration: none;

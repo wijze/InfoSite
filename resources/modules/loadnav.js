@@ -1,7 +1,5 @@
 function loadNav(page){
-  let more = page=="content"
-  const otherpages = []
-  more = page in otherpages
+  let more = (page=="IP" || page=="protocollen")
   const indexroute = page=="index"
 
   return`
@@ -29,14 +27,17 @@ function loadNav(page){
         </a>
       </li>
 
-      <li tabindex="0" class="nav-item has-dropdown nav-link"${more ? 'id="active"':''}>
+      <li tabindex="0" class="nav-item has-dropdown nav-link" ${more ? 'id="active"':''}>
         <div>
           <i class="fa fa-sharp fa-solid fa-list"></i>
           <span class="link-text">More</span>
         </div>
         <ul class="dropdown">
           <li class='nav-item'>
-            <a ${page=='IP' ? 'id="active"':''} href="${page=='IP' ? 'javascript:void(0)' : getPath(indexroute, "IP")} "   class="nav-link">IP-Protocol  </a>
+            <a href="${page=='protocollen' ? 'javascript:void(0)' : getPath(indexroute, "protocollen")} "   class="nav-link ${page=='protocollen' ? 'active':''}">Protocollen  </a>
+          </li>
+          <li class='nav-item'>
+            <a href="${page=='IP' ? 'javascript:void(0)' : getPath(indexroute, "IP")} "   class="nav-link ${page=='IP' ? 'active':''}">IP-protocol  </a>
           </li>
         </ul>
       </li>

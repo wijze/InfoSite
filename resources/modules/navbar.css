@@ -84,7 +84,7 @@ nav {
   color: var(--accent-col);
 }
 
-#active{
+.active,#active{
   color: var(--accent-col);
   background-color: #252525;
 }

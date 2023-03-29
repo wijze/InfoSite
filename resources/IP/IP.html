@@ -23,14 +23,49 @@
   </nav>
 
   <main>
-  <h1>IP-Protocol</h1>
-
-  <h2>Kop1</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda quaerat tempora sunt a eum eveniet, aspernatur dolorem nostrum consequuntur officiis repellendus aliquid est, iusto ab adipisci atque eligendi veritatis.</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorem, dolorum et illo minima consequuntur laborum eveniet totam iste illum excepturi! Optio blanditiis iusto ipsum veniam, quis repellat? Nisi, tempore!</p>
+    <h1>Het IP-protocol</h1>
   
-  <a onclick="setProgress('IP',100)" href="" class="roundButtonSec">Next →</a>
-</main>
+    <p>Het IP-protocol is een belangrijk protocol voor het verzenden van datapakketten tussen computers over een netwerk. Het garandeert echter geen foutloze aflevering van datapakketten tussen computers, daarvoor is een ander protocol zoals TCP nodig. Een IP-pakket bevat verschillende velden zoals de versie van het protocol, de lengte van de header, de totale lengte van het datapakket, de identificatie, de fragmentatie, de Time To Live (TTL), het protocol, de checksum van de header en het bron- en bestemmingsadres. Het IP-protocol is een packet-switched netwerk, wat betekent dat gegevens in de vorm van datapakketten worden verzonden. Naast deze standaardvelden biedt het IP-protocol ook opties in een IP-datagram, waardoor het mogelijk is om het protocol aan te passen aan de specifieke behoeften van de toepassing. </p>
+    <p>IP-adressen zijn unieke nummers die worden gebruikt om apparaten op een netwerk te identificeren en bestaan uit vier groepjes van getallen gescheiden door punten. Er is ook een nieuw adressysteem, IPv6, dat veel meer adressen mogelijk maakt.  </p>
+  
+    <h2>Vragen</h2>
+    <ol>
+      <li>Bij IP- adressen wordt gesproken over IPv4 en IPv6 waarom was/is de invoering van IPv6 nodig? Hoeveel adressen zijn er in theorie bij IPv4 en hoeveel bij IPv6?</li>
+      <li>Wat houdt het begrip checksum in en waar dient dit voor?</li>
+      <li>Waarom komen TCP en IP vaak gecombineerd voor?
+        <br> a. IP verzorgt het transport en TCP zorgt onder meer voor een optimale flow control.
+        <br> b. IP verzorgt het transport en TCP zorgt onder meer voor een snellere gegevensoverdracht.
+        <br> c. IP verzorgt het transport en TCP zorgt onder meer voor de juiste volgorde.
+        <br> d. IP verzorgt het transport en TCP zorgt onder meer voor de foutcontrole.</li>
+      <li>Welk deel van het IP-Datagram zorgt ervoor dat er geen foute pakketten worden geaccepteerd door de ontvanger? 
+        <br> A. Protocol 
+        <br> B. Source IP-adres 
+        <br> C. Checksum 
+        <br> D. Total Length </li>
+      <li>Hoe ziet een IPV4 IP-adres eruit? 
+        <br> A. 192.0.2.197 
+        <br> B. 123.987.000 
+        <br> C. 2001:0db8:85a3:0000:1319:8a2e:0370:7344 
+        <br> D. 3.14159265358.0.0.0 </li>
+      <li>Is het IP-protocol veilig? (Zodat erg geen pakketten verloren gaan) 
+        <br> A. Ja 
+        <br> B. nee 
+        <br> C. weet ik veel </li>
+      <li>Wat is de Time To Live (TTL) van het IP-protocol? Waarvoor wordt het gebruikt? Waarom is het nodig? </li>
+      </ol>
+    <h2>Antwoorden</h2>
+    <ol>
+      <li>Mensen willen naar ipv6 gaan van ipv4, omdat ipv6 veel meer adressen heeft, omdat we er niet genoeg hebben, ze zijn bijna allemaal gebruikt. Ipv6 heeft er 340,282,366,920,938,000,000,000,000,000,000,000,000 terwijl ipv4 er maar 4.294.967.296 heeft. 
+      <li>Een checksum is een deel van het IP-protocol dat zegt dat je een bepaald ding aan je pakket moet toevoegen wat iets zegt over de rest van het bericht en wat je daaruit kan berekenen. Bij aankomst wordt gecheckt of de checksum klopt met het bericht, zo niet, dan wordt het bericht weggegooid. Dit zorgt ervoor dat de ontvanger geen foute berichten krijgt.</li>
+      <li>D</li>
+      <li>C</li>
+      <li>A</li>
+      <li>A of C</li>
+      <li>Time To Live zorgt ervoor dat het IP-protocol maar langs een beperkt aantal routers kan gaan. Het zorgt ervoor dat pakketten niet oneindig lang door kunnen gaan</li>
+    </ol>
+  
+    <a onclick="setProgress('IP',100)" href="" class="roundButtonSec">Volgende →</a>
+  </main>
 
   <script>document.getElementById('nav').innerHTML = loadNav('IP')</script>
 </body>

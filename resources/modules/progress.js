@@ -10,9 +10,14 @@ if (progress && JSON.parse(progress)){
       name:"Start",
       procentile:0
     },
+    protocollen: {
+      linkName:"protocollen",
+      name:"Protocollen",
+      procentile:0
+    },
     IP: {
       linkName:"IP",
-      name:"IP-Protocol",
+      name:"IP-protocol",
       procentile:0
     }
   }
