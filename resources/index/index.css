@@ -70,6 +70,7 @@ main{
 
 .headerWrapper{
   padding: 5%;
+  padding-bottom: 1rem;
 
   z-index: 1;
   position: relative;

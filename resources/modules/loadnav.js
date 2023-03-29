@@ -7,7 +7,7 @@ function loadNav(page){
   return`
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="${getPath(false, "index")}" class="nav-link">
+        <a href="${getPath(indexroute, "index")}" class="nav-link">
           <span class="link-text logo-text">Menu</span>
           <i class="logo-image fa fa-solid fa-arrow-circle-right"></i>
         </a>

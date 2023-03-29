@@ -4,6 +4,8 @@ body,html{
 
   padding: 0;
   margin: 0;
+
+  overflow: hidden scroll;
 }
 
 p,h2{
@@ -27,7 +29,7 @@ a{
 
 .roundButtonSec{
   margin-right: 0.5rem;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   width: fit-content;
 
   padding: 16px;
