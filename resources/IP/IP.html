@@ -25,8 +25,33 @@
   <main>
     <h1>Het IP-protocol</h1>
   
-    <p>Het IP-protocol is een belangrijk protocol voor het verzenden van datapakketten tussen computers over een netwerk. Het garandeert echter geen foutloze aflevering van datapakketten tussen computers, daarvoor is een ander protocol zoals TCP nodig. Een IP-pakket bevat verschillende velden zoals de versie van het protocol, de lengte van de header, de totale lengte van het datapakket, de identificatie, de fragmentatie, de Time To Live (TTL), het protocol, de checksum van de header en het bron- en bestemmingsadres. Het IP-protocol is een packet-switched netwerk, wat betekent dat gegevens in de vorm van datapakketten worden verzonden. Naast deze standaardvelden biedt het IP-protocol ook opties in een IP-datagram, waardoor het mogelijk is om het protocol aan te passen aan de specifieke behoeften van de toepassing. </p>
-    <p>IP-adressen zijn unieke nummers die worden gebruikt om apparaten op een netwerk te identificeren en bestaan uit vier groepjes van getallen gescheiden door punten. Er is ook een nieuw adressysteem, IPv6, dat veel meer adressen mogelijk maakt.  </p>
+    <p>Het IP-protocol garandeer zelf geen veilige/ stabiele verbinding, daar heb je een extra protocol zoals TCP voor nodig, waardoor je deze twee vaak als een combinatie vindt.  </p>
+
+    <p>Verzonden pakketten kunnen meerdere routes nemen, hierdoor merk je er niks van als een route wegvalt zolang er minstens een route overblijft. Pakketten van het IP-protocol hebben een vaste structuur volgens het IP-datagram. Het IP-datagram bevat de onderdelen:  </p>
+    <ul>
+      <li>Version: welke IP-versie, zoals IPv4 of IPv6.</li>
+      <li>IHL: lengte van de informatie over het pakket.</li>
+      <li>ToS: specificatie welke betrouwbaarheid en prioriteit dit pakket heeft. </li>
+      <li>Total length: hoe groot is dit pakket. </li>
+      <li>Identification: hiermee identificeert het pakket zich. </li>
+      <li>Flaggs: wordt gebruikt als het pakket in kleinere delen wordt opgesplitst (gefragmenteerd).</li>
+      <li>Fraggment offset: wordt ook gebruikt bij het fragmenteren van pakketten.</li>
+      <li>Time To Live: hoe vaak het pakket doorgestuurd mag worden voor het de bestemming bereikt.</li>
+      <li>Protocol: welk protocollen het pakket gebruikt, zoals Timage.pngCP.</li>
+      <li>Header Checksum: controle of de informatie over het pakket niet verandert is.</li>
+      <li>Source and Destination IP address: waar het pakket vandaan komt en waar het heen gaat.</li>
+      <li>Options: optioneel voor extra opties. </li>
+    </ul>
+
+    <h2>IP-adressen</h2>
+
+    <p>Elk apparaat wat verbonden is met het internet heeft een uniek nummer om zich te kunnen kenmerken. Deze bestaan uit vier getallen tussen 0 en 255 gescheiden door een punt. Deze adressen kunnen dynamisch toegewezen worden op het moment dat de computer verbinding maakt met het internet of vast blijven, bij het dynamisch toewijzen is het DHCP-protocol behulpzaam.</p>
+
+    <p>Apparaten kunnen op een netwerk ook een adres krijgen wat van buiten het netwerk niet beschikbaar is. Dit wordt ook gebruikt voor wifi zodat alle apparaten die op de wifi zijn hetzelfde IP-adres hebben van buiten. Dit heet een private range.</p>
+
+    <p>Er zijn verschillende versies van het IP-protocol, met als meest gebruikte IPv4 en een nieuwere maar nog minder gebruikt IPv6. IPv6 heeft als voordeel dat het veel meer adressen heeft.</p>
+
+    <p>ls gebruiker zie je echter zelden IP-adressen, je ziet namelijk domeinen zoals ww.nu.nl. Deze worden echter achter de schermen vertaalt naar IP-adressen die voor computers te gebruiken zijn, hierbij wordt er gebruik gemaakt van het DNS protocol.</p>
   
     <h2>Vragen</h2>
     <ol>
