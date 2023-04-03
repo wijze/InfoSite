@@ -8,6 +8,10 @@ body,html{
   overflow: hidden scroll;
 }
 
+h1{
+  font-size: 2.5rem;
+}
+
 p,h2.li{
   margin-top: 0;
   margin-bottom: 0.5rem;

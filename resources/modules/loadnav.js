@@ -27,6 +27,15 @@ function loadNav(page){
         </a>
       </li>
 
+      <li class="nav-item">
+        <a href="${
+          page=='quiz' ? 'javascript:void(0)' : getPath(indexroute, "quiz")
+        }" class="nav-link" ${page=='quiz' ? 'id="active"':''}>
+          <i class="fa fa-solid fa-list-check"></i>
+          <span class="link-text">Quiz</span>
+        </a>
+      </li>
+
       <li tabindex="0" class="nav-item has-dropdown nav-link" ${more ? 'id="active"':''}>
         <div>
           <i class="fa fa-sharp fa-solid fa-list"></i>

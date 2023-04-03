@@ -1,7 +1,7 @@
 const body = document.body
 const root = document.querySelector(':root')
 
-
+var disco = setInterval({}, 1000)
 
 
 //getting theme that is already set, if not: set it
@@ -54,7 +54,10 @@ function applyCustomColorscheme(newColorScheme){
 
 
 
-async function setRandomTheme(){
+async function setRandomTheme(disco){
+  if(!(disco)){
+    clearInterval(disco)
+  }
 
   //generating custom color scheme
   let randomSeed = Math.floor(Math.random()*16777215).toString(16);
@@ -67,7 +70,15 @@ async function setRandomTheme(){
 
 
 function setNormalTheme(newTheme){
+  clearInterval(disco)
   body.classList = newTheme
   theme.type = newTheme
   localStorage.setItem("theme", JSON.stringify(theme))
+}
+
+function discoMode(){
+  clearInterval(disco)
+  disco = setInterval(()=>{
+    setRandomTheme(true)
+  }, 300)
 }
