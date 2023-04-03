@@ -19,6 +19,11 @@ if (progress && JSON.parse(progress)){
       linkName:"IP",
       name:"IP-protocol",
       procentile:0
+    },
+    lagenmodel:{
+      linkName:"lagenmodel",
+      name:"Het lagenmodel",
+      procentile:0
     }
   }
   localStorage.setItem("progress", JSON.stringify(progress))

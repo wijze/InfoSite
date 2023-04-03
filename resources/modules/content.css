@@ -4,3 +4,19 @@ p{
 
     font-size: large;
 }
+
+h2{
+    margin-top: 30px;
+}
+
+.marginTopWrapper{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+p,li{
+    max-width: 800px;
+}
+ol > li{
+    margin-bottom: 10px;
+}

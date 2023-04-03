@@ -39,6 +39,9 @@ function loadNav(page){
           <li class='nav-item'>
             <a href="${page=='IP' ? 'javascript:void(0)' : getPath(indexroute, "IP")} "   class="nav-link ${page=='IP' ? 'active':''}">IP-protocol  </a>
           </li>
+          <li class='nav-item'>
+            <a href="${page=='lagenmodel' ? 'javascript:void(0)' : getPath(indexroute, "lagenmodel")} "   class="nav-link ${page=='lagenmodel' ? 'active':''}">Lagenmodel  </a>
+          </li>
         </ul>
       </li>
     </ul>

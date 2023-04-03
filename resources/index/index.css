@@ -54,9 +54,10 @@ main{
   left: 25%;
 
   width: 50%;
+  height: 20px;
+}
+#part2> a.before > div{
   height: 6px;
-
-  content: "";
   background: black;
   border-radius: 5px;
 }
