@@ -57,6 +57,8 @@ a{
 
 .wrappedText{
   max-width: 800px;
+  line-break: loose;
+  word-wrap: break-word;
 }
 
 

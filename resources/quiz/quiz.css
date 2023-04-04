@@ -18,3 +18,7 @@ input,button{
 button{
   padding: 5px;
 }
+
+.horz>p, .horz>button, .horz>input{
+  margin: auto 10px auto 0;
+}

@@ -33,7 +33,7 @@
       
       <div id="mainloop">
         <div>
-          <p style="display: none;" id="question"></p>
+          <p class="wrappedText" style="display: none;" id="question"></p>
           <div class="horz">
             <input style="display: none;" type="text" id="answerInput">
             <button style="display: none;" id="submitButton" onclick="checkAnswer()">Submit</button>
@@ -42,11 +42,12 @@
         <div>
           <div style="display: none;" id="givenAnswerWrapper" class="horz">
             <p>Jouw Antwoord:</p>
-            <p id="givenAnswer"></p>
+            <p class="wrappedText" id="givenAnswer"></p>
           </div>
-          <p style="display: none;" id="correct"></p>
-          <p style="display: none;" id="correctAnswer"></p>
+          <p class="wrappedText" style="display: none;" id="correct"></p>
+          <p class="wrappedText" style="display: none;" id="correctAnswer"></p>
           <div style="display: none;" id="raterWrapper" class="horz">
+            <p>Jouw antwoord is:</p>
             <button onclick="verifyAnswer(true)">Correct</button>
             <button onclick="verifyAnswer(false)">Incorrect</button>
           </div>

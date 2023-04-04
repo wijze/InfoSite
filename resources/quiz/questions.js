@@ -52,7 +52,7 @@ const questions = [
     <br> A. Ja 
     <br> B. nee 
     <br> C. weet ik veel`,
-    answer:"A of C"
+    answer:"B of C"
   },
   {
     question:`Wat is de Time To Live (TTL) van het IP-protocol? Waarvoor wordt het gebruikt? Waarom is het nodig?`,
