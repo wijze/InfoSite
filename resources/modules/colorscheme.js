@@ -1,14 +1,13 @@
 const body = document.body
 const root = document.querySelector(':root')
 
-var disco = setInterval({}, 1000)
+var disco = false
 
 
 //getting theme that is already set, if not: set it
 var theme = localStorage.getItem('theme');
 
 if(theme==null){
-  console.log("reset")
   theme = {
     type:"light",
     custom:{}
@@ -54,9 +53,10 @@ function applyCustomColorscheme(newColorScheme){
 
 
 
-async function setRandomTheme(disco){
-  if(!(disco)){
+async function setRandomTheme(stillDisco){
+  if(disco && (! stillDisco)){
     clearInterval(disco)
+    disco=false
   }
 
   //generating custom color scheme
@@ -65,20 +65,35 @@ async function setRandomTheme(disco){
   newColorScheme = await newColorScheme.json();
   newColorScheme = await newColorScheme.colors.map(function(element){return element.rgb})
 
-  applyCustomColorscheme(newColorScheme)
+  setTimeout(applyCustomColorscheme(newColorScheme), stillDisco?0:100)
 }
 
 
 function setNormalTheme(newTheme){
-  clearInterval(disco)
-  body.classList = newTheme
-  theme.type = newTheme
-  localStorage.setItem("theme", JSON.stringify(theme))
+  if(disco){
+    clearInterval(disco)
+    disco = false
+    setTimeout(()=>{
+      body.classList = newTheme
+      theme.type = newTheme
+      localStorage.setItem("theme", JSON.stringify(theme))
+    }, 100)
+  }
+  else{
+    body.classList = newTheme
+    theme.type = newTheme
+    localStorage.setItem("theme", JSON.stringify(theme))
+  }
 }
 
 function discoMode(){
-  clearInterval(disco)
-  disco = setInterval(()=>{
-    setRandomTheme(true)
-  }, 300)
+  if(disco){
+    clearInterval(disco)
+    disco = false
+  }
+  else{
+    disco = setInterval(()=>{
+      setRandomTheme(true)
+    }, 300)
+  }
 }

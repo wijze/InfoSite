@@ -24,6 +24,11 @@ if (progress && JSON.parse(progress)){
       linkName:"lagenmodel",
       name:"Het lagenmodel",
       procentile:0
+    },
+    quiz:{
+      linkName:"quiz",
+      name:"Quiz",
+      procentile:0
     }
   }
   localStorage.setItem("progress", JSON.stringify(progress))

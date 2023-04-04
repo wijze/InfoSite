@@ -1,0 +1,20 @@
+#givenAnswer{
+  margin-left: 10px;
+}
+
+body{
+  font-size: large;
+}
+
+p{
+  margin-bottom: 5px;
+}
+
+input,button{
+  font-size: large;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+button{
+  padding: 5px;
+}

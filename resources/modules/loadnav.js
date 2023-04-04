@@ -22,8 +22,8 @@ function loadNav(page){
         <a href="${
           page=='progress' ? 'javascript:void(0)' : getPath(indexroute, "progress")
         }" class="nav-link" ${page=='progress' ? 'id="active"':''}>
-          <i class="fa fa-solid fa-list-check"></i>
-          <span class="link-text">Progress</span>
+          <i class="fa fa-address-card"></i>
+          <span class="link-text">Voortgang</span>
         </a>
       </li>
 
@@ -31,7 +31,7 @@ function loadNav(page){
         <a href="${
           page=='quiz' ? 'javascript:void(0)' : getPath(indexroute, "quiz")
         }" class="nav-link" ${page=='quiz' ? 'id="active"':''}>
-          <i class="fa fa-solid fa-list-check"></i>
+          <i class="fa fa-question"></i>
           <span class="link-text">Quiz</span>
         </a>
       </li>
